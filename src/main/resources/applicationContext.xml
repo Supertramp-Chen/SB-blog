@@ -1,0 +1,14 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">-->
+<!--    &lt;!&ndash;    声明依赖&ndash;&gt;-->
+<!--    &lt;!&ndash;    告诉S 需要US这样的bean     类型是&ndash;&gt;-->
+<!--    &lt;!&ndash;    S按照声明的方式 装配&ndash;&gt;-->
+<!--    <bean id="orderService" class="com.example.sblog.service.OrderService">-->
+<!--    </bean>-->
+
+<!--&lt;!&ndash;    <bean id="userService" class="com.example.sblog.service.UserService">&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--</beans>-->
