@@ -1,5 +1,6 @@
 package com.example.sblog.configuration;
 
+import com.example.sblog.mapper.UserMapper;
 import com.example.sblog.service.OrderService;
 import com.example.sblog.service.UserService;
 import org.springframework.context.annotation.Bean;
@@ -13,12 +14,12 @@ public class JConfiguration {
         //告诉S 我要的bean 依赖于谁 如何创建
         @Bean
         //@Bean 允许我们在 Spring Configuration 类中创建一个 Bean
-        public UserService getUService() {
-            return new UserService();
+        public UserService getUService(UserMapper userMapper) {
+            return new UserService(userMapper);
         }
         @Bean
-        public OrderService getOService() {
-            return new OrderService(getUService());
+        public OrderService getOService(UserMapper userMapper) {
+            return new OrderService(getUService(userMapper));
         }
     }
 }

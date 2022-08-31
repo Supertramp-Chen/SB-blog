@@ -1,7 +1,9 @@
 package com.example.sblog.service;
 
-import javax.inject.Inject;
+import org.springframework.stereotype.Service;
 
+import javax.inject.Inject;
+@Service
 public class OrderService {
     //OS依赖于US
     private UserService userService;
@@ -15,6 +17,6 @@ public class OrderService {
     }
 
     public void placeOrder(Integer userId, String item) {
-        userService.getUserID(userId);
+        userService.getUserId(userId);
     }
 }
